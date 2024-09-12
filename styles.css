@@ -30,8 +30,8 @@ body {
     height: auto;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #91391e;
     color: rgb(78, 37, 44);
+    background-image: url(./Assets/Fundo.jpg);
 }
 
 #menu {
