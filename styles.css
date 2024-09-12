@@ -37,13 +37,12 @@ body {
 #menu {
   width: 100%;
   height: 70px;
-  background-color: rgb(247, 225, 186);;
+  background-color: #91391e;;
   padding-top: 20px;
   border: 2px solid #000;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 1.5px;
-
+  margin-bottom: 1px;
 }
 
 #menu ul {
@@ -58,17 +57,17 @@ body {
 
 #menu ul li a {
   text-decoration: none;
-  color: rgb(78, 37, 44);
+  color: wheat;;
   font-size: 22px;
   font-weight: 600;
 
 &:hover {
-  color: black;
+  color: #91391e;
   text-decoration: none;
   border-radius: 10px;
-  border: 2px solid #000;
-  background-color: #91391e;
-  color: wheat;
+  border: 1px solid #000;
+  background-color: wheat;
+  color: #91391e;
 }
 }
 
@@ -95,7 +94,7 @@ body {
     width: 70%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid #000;
+    border: 2px solid #91391e;
 
 }
 
@@ -120,4 +119,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.margem-titulos {
+  margin: 15px 0;
+}
+
+#modo-preparo ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+
+  margin-bottom: 10px;
+
+  &:last-child{
+    margin: 0;
+  }
+
+  &::marker {
+    font-weight: 800;
+  }
 }
