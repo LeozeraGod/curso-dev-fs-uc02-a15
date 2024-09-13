@@ -26,12 +26,13 @@ li {
  
 body {
     font-family: 'Albert Sans', Arial, Helvetica, sans-serif;
-    width: 1000px;
+    width: 65vw;
     height: auto;
-    max-width: 1000px;
+    max-width: 65vw;
     margin: 0 auto;
     color: rgb(78, 37, 44);
     background-image: url(./Assets/Fundo.jpg);
+    
 }
 
 #menu {
@@ -156,3 +157,41 @@ body {
   text-align: center;
 }
 
+/* Fazendo responsividade do site */
+
+@media (max-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vw;
+  } 
+
+  #menu  {
+    height: 50px;
+  }
+
+#menu ul {
+  justify-content: space-evenly;
+}
+
+#menu ul li a {
+  font-size: 18px;
+}
+
+#titulo h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#conteudo {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+#rodape {
+  font-size: 15px;
+}
+}
