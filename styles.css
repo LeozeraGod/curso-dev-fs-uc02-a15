@@ -40,10 +40,11 @@ body {
   height: 70px;
   background-color: #91391e;;
   padding-top: 20px;
-  border: 2px solid #000;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   padding: 20px;
   margin-bottom: 1px;
+  border: 2px solid black;
 }
 
 #menu ul {
@@ -59,14 +60,13 @@ body {
 #menu ul li a {
   text-decoration: none;
   color: wheat;;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
 
 &:hover {
   color: #91391e;
   text-decoration: none;
   border-radius: 10px;
-  border: 1px solid #000;
   background-color: wheat;
   color: #91391e;
 }
@@ -78,15 +78,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 225, 186);
-    border: 2px solid #000;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 1.5px;
 }
 #titulo h1 {
   padding: 10px;
-  background-color: #91391e;
   border-radius: 10px;
   margin-bottom: 10px;
   color:wheat;
@@ -103,10 +100,8 @@ body {
 #conteudo {
     width: 100%;
     height: auto;
-    background-color: rgb(247, 225, 186);
     padding: 0 60px;
     padding-top: 40px;
-    border: 2px solid #000;
     display: grid;
     grid-template-columns: 30% 60%;
     border-radius: 10px;
@@ -115,6 +110,55 @@ body {
     margin-bottom: 1.5px;
 }
 
+#container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(247, 225, 186);
+  border-radius: 10px;
+}
+
+#banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#banner figure {
+  width: 70%;
+  height: 90%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#banner figure img {
+  width: 100%;
+  height: auto;
+}
+
+#banner figure figcaption {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #91391e;
+  color: wheat;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.banner-selecionado {
+  color: white
+}
+#banner ul {
+  display: flex;
+}
+#banner ul li {
+list-style: none;
+font-size: 30px;
+}
 
 #Ingredientes, #modo-preparo {
   display: flex;
@@ -148,7 +192,6 @@ body {
   height: 80px;
   background-color: #91391e;;
   padding-top: 20px;
-  border: 2px solid #000;
   border-radius: 10px;
   padding-bottom: 10px;
   margin-bottom: 1px;
@@ -178,7 +221,7 @@ body {
 }
 
 #titulo h1 {
-  font-size: 24px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -191,7 +234,5 @@ body {
   padding-right: 20px;
   padding-bottom: 10px;
 }
-#rodape {
-  font-size: 15px;
-}
+
 }
